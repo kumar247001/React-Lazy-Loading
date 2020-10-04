@@ -1,0 +1,108 @@
+@font-face{
+  font-family:Rooneysans-Regular;
+  font-display: swap;
+  src:url(https://static-webfonts.myfonts.com/kit/RooneySans-Regular_normal_normal/font.eot);
+  src:url(https://static-webfonts.myfonts.com/kit/RooneySans-Regular_normal_normal/font.eot#iefix) format("embedded-opentype"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Regular_normal_normal/font.woff2) format("woff2"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Regular_normal_normal/font.woff) format("woff"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Regular_normal_normal/font.ttf) format("truetype")
+}
+
+@font-face{
+  font-family:Rooneysans-Medium;
+  font-display: swap;
+  src:url(https://static-webfonts.myfonts.com/kit/RooneySans-Medium_normal_normal/font.eot);
+  src:url(https://static-webfonts.myfonts.com/kit/RooneySans-Medium_normal_normal/font.eot#iefix) format("embedded-opentype"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Medium_normal_normal/font.woff2) format("woff2"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Medium_normal_normal/font.woff) format("woff"),url(https://static-webfonts.myfonts.com/kit/RooneySans-Medium_normal_normal/font.ttf) format("truetype")
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rooneysans-Regular', "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Rooneysans-Medium', "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.App > h2 {
+  color: white;
+  position: sticky;
+  top: 10px;
+  background-color: #3a3a3ac9;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 300px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  img {
+    width: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #fff;
+  }
+}
+
+.spinner-placeholder {
+  width: 80px;
+  height: 80px;
+}
+
+.post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.post-wrapper.col-2 {
+  .lazyload-wrapper {
+    width: calc((100% - 70px) / 2);
+  }
+  .promo {
+    .promo-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      .promo__cart-button {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.post-wrapper.col-3 {
+  .lazyload-wrapper {
+    width: calc((100% - 140px) / 3);
+  }
+}
